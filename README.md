@@ -1,6 +1,6 @@
 # MCWK
 
 ### Team Members:
-William Givens
-Dalton Koch
+William Givens,
+Dalton Koch,
 Troy Pei
