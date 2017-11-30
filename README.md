@@ -38,3 +38,16 @@ CREATE TABLE users (
   imagePath varchar(1024) DEFAULT NULL
 );
 
+### Entity Relationship Diagram for Database:
+
+![alt text](MCWK/Database_ERD.jpeg)
+
+### CRUD:
+This web application uses create in many areas. The first is when the user creates an account. The information entered into the form is sent to the _POST
+and used to insert into the useres table in the database. Create is also used when the user creates a new thread on the Forums page.
+
+
+
+
+
+
