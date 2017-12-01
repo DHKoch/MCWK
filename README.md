@@ -40,7 +40,7 @@ CREATE TABLE users (
 
 ### Entity Relationship Diagram for Database:
 
-![ERD](https://github.com/DHKoch/MCWK/Database_ERD.jpeg)
+![ERD](https://github.com/DHKoch/MCWK/blob/master/Database_ERD.jpeg)
 
 ### CRUD:
 This web application uses create in many areas. The first is when the user creates an account. The information entered into the form is sent to the _POST
