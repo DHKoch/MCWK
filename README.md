@@ -51,8 +51,13 @@ CREATE TABLE users (
 ![ERD](https://github.com/DHKoch/MCWK/blob/master/Database_ERD.jpeg)
 
 ### CRUD:
-This web application uses create in many areas. The first is when the user creates an account. The information entered into the form is sent to the _POST
-and used to insert into the useres table in the database. Create is also used when the user creates a new thread on the Forums page.
+This web application meets the CRUD criteria in the following ways. First, the user can add a new thread by clicking the ‘New Thread’ button on the forum page, which satisfies the “Create” criterion in CRUD. The SQL statement is as follows:  “INSERT INTO threads (title, postUserID, addDate, changeDate) VALUES ('$thread_Title', '$session_ID', NOW(),NOW())”, which. can be found in the forums_process.php file at line 160.
+
+Second, the forums page presents a table of all the threads in the threads table, satisfying the ‘Read’ criterion in CRUD. The SQL statement used is: “SELECT threads.threadID, threads.title, threads.postUserID, threads.addDate, threads.changeDate, users.username, users.imagePath FROM threads INNER JOIN users ON threads.postUserID = users.id ORDER BY threads.changeDate DESC”, which can be found in the forums_process.php file at line 317. 
+
+Third, the user may update his or her account information, such as username. This meets the ‘Update’ criterion in CRUD. The SQL statement can be found at line 22 in changeUsername.php:  “UPDATE users SET username = '$newusername' WHERE id = $ID”.
+
+Lastly, the “Delete” criterion in CRUD is satisfied when the user deletes his or her posts in a thread. The SQL statement used to perform this action, which can be found in forums_process.php at line 212, is “DELETE FROM posts WHERE postID = $post_ID AND postUserID = $session_ID”.
 
 
 
