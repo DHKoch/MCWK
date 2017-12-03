@@ -51,6 +51,9 @@ CREATE TABLE users (
 
 ![ERD](https://github.com/DHKoch/MCWK/blob/master/Database_ERD.jpeg)
 
+### Video Presentation of Website
+![Project Demo](https://youtu.be/n7BbRpUAz4I)
+
 ### CRUD:
 This web application meets the CRUD criteria in the following ways. First, the user must create an account, satisfying the ‘Create’ criterion. The account information is then inserted into the users table in the database. The corresponding code can be found at line 63 in createUser.php: “insert into users (firstName, lastName, username, password, email, birthday, addDate, changeDate) values ('$firstName', '$lastName', '$username', '$password', '$email', STR_TO_DATE('$birthday', '%Y-%m-%d'), now(), now())”.  Second, the user may update his or her account information, such as username, satisfying the ‘Update’ criterion. Associated code can be found at line 22 in changeUsername.php:  “UPDATE users SET username = '$newusername' WHERE id = $ID”. The user may update his or her account information, such as username. This meets the ‘Update’ criterion in CRUD. The SQL statement can be found at line 22 in changeUsername.php:  “UPDATE users SET username = '$newusername' WHERE id = $ID”. 
 
