@@ -1,0 +1,17 @@
+<div id="dolphincontainer">
+<div id="dolphinnav">
+<ul>
+<?php
+foreach ($this->menuItems as $menuItem) {
+	$label = $menuItem['label'];
+	$link = $menuItem['link'];
+	$current = "";
+	if ($label == $this->currentPage) {
+		$current = 'class="current"';
+	}
+	print "<li><a href=\"$link\" title=\"$label\" $current><span>$label</span></a></li>\n";
+}
+?>
+</ul>
+</div>
+</div>
