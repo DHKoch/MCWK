@@ -17,6 +17,9 @@
     font-size: 60px;
     color: white;
     text-shadow: 0 0 6px turquoise;
+    width: 100%;
+    min-width: 1000px;
+    overflow: hidden;
 }
 
 #content {
@@ -38,14 +41,16 @@
     width: 100%;
     min-width: 1000px;
     text-align: center;
-    
+    overflow: hidden;
 }
 
 #inner{
     min-width: 1000px;
+    width: 1025px;
     display: inline-block;
     overflow-x:auto; 
     overflow-y:hidden;
+    overflow: hidden;
 }
 
 #user {

@@ -8,6 +8,11 @@
     $result = $menu->generate();
     $menuCSSFile = $result['cssFile'];
     $menuHTML = $result['html'];
+
+    if (!$loggedIn) {
+		header("Location: login.php");
+		exit;
+	}
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +25,7 @@
 </style>
 <script>
     function getUsername () {
-        $("#nameBox").attr("value", "<?php echo $username ?>");
+        $("#nameBox").attr("value", "<?php echo $_SESSION['loggedin'] ?>");
     }
     
     function changeName () {

@@ -19,6 +19,15 @@
             
     $newusername = $conn-> real_escape_string($newusername);
 
+    $query = "SELECT id FROM users WHERE userName = '$newusername'";
+    $result = $conn->query($query);
+            
+    if ($result->num_rows > 0) {
+        $error = "User Already Exists!";
+        require "account.php";
+        exit;
+    }
+
     $query = "UPDATE users SET username = '$newusername' WHERE id = $ID";       
 
     $conn -> query($query);

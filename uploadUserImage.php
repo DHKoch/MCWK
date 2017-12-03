@@ -15,6 +15,11 @@
 
     $target_file = $target_dir . $ID . "." . $imageFileType;
 
+    if(!$_FILES["fileToUpload"]["name"]) {
+        header("Location: account.php");
+        exit;
+    }
+
     // Check if image file is a actual image or fake image
     if(isset($_POST["submit"])) {
         $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);

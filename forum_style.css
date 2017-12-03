@@ -1,0 +1,156 @@
+    .userImage {
+        width: 70px;
+        height: 70px;
+        padding-bottom: 5px; 
+    }
+
+    .thread_UserImage {
+        width: 50px;
+        height: 50px;
+        padding: 10px; 
+    }
+    
+    .post_User {
+        padding: 10px;
+        font-family: sans-serif;
+        background-color: #1D6893;
+        border-radius: 15px;
+        color: white;
+        width: 95px;
+        max-width: 95px;
+        height: 100px;
+        text-align: center;
+    }
+    
+    .post_Box {
+        padding: 10px;
+        text-align: left;
+        font-family: sans-serif;
+        background-color: #1D6893;
+        border-radius: 15px;
+        color: white;
+        width: 650px;
+        min-height: 90px;
+        text-align: top;
+    }
+    
+    .post_Content {
+        min-height: 60px;
+        background-color: lightslategray;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    .post_Info {
+        padding-top: 10px;
+        font-size: 10px;
+        max-width: 100px;
+        text-align: right;
+        float: right;
+    }
+
+    .post_Interaction {
+        max-width: 200px;
+        width: 200px;
+        padding-top: 10px;
+        text-decoration:none;
+    }
+
+    .post_Interaction a{
+        text-decoration:none;
+    }
+
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    
+    #thread_Title{
+        padding: 10px;
+        color: white;
+        font-family: sans-serif;
+        background-color: #1D6893;
+        font-size: 20px;
+        border-radius: 15px;  
+    }
+    
+    .thread_Link {
+        font-size: 20px;
+        color: white;
+        text-decoration:none;
+    }
+    
+    #thread_Table {
+        color: lightgray;
+        font-family: sans-serif;
+        background-color: #1D6893;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+    
+    .thread_info {
+        font-size: 12px;
+    }
+    
+    .thread_LinkBox {
+        padding-left: 20px;
+        width:  400px;
+        max-width:  400px;
+
+    }
+    
+    .thread_PostAmount {
+        width:  165px;
+    }
+    
+    .thread_LastUser{
+        padding-right: 25px;
+    }
+    
+    #thread_Table tr th,
+    #thread_Table tr td {
+      border-bottom: 2px solid gray;
+    }
+    
+    #post_Reply {
+        padding: 10px;
+        text-align: left;
+        font-family: sans-serif;
+        background-color: #1D6893;
+        border-radius: 15px;
+        color: white;
+        width: 775px;
+        min-height: 90px;
+        text-align: top;
+    }
+    
+    #post_ReplyBox {
+        width: 753px;
+        min-height: 100px;
+        padding: 10px;
+        
+    }
+    
+    #create_ThreadBox {
+        padding: 10px;
+        text-align: left;
+        font-family: sans-serif;
+        background-color: #1D6893;
+        border-radius: 15px;
+        color: white;
+        width: 775px;
+        min-height: 90px;
+        text-align: top;
+    }
+    
+    #thread_PostContent {
+        width: 750px;
+        min-height: 100px;
+        padding: 10px;
+    }
+    
+    #thread_TitleBox {
+        width: 760px;
+        padding: 5px;
+    }

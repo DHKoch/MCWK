@@ -22,6 +22,7 @@
     else {
         $menuItems[] = array('label' => 'Logout', 'link' => 'logout.php');
         $username = $_SESSION['loggedin'];
+        $username = substr($username,0,10);
         $userID = $_SESSION['userID'];
         $image = $_SESSION['imagePath'];
         

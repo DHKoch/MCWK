@@ -25,6 +25,7 @@
     foreach ($members as $member) {
 			$id = $member['id'];
             $username = $member['username'];
+            $username = substr($username,0,14);
 			$addDate = $member['addDate'];	
             $image = $member['imagePath'];
             if(file_exists($image)){

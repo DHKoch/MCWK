@@ -56,8 +56,18 @@
             }
             
             $username = $conn-> real_escape_string($username);
-            $password = $conn-> real_escape_string($password);
             
+            $query = "SELECT id FROM users WHERE userName = '$username'";
+            $result = $conn->query($query);
+            
+            if ($result->num_rows > 0) {
+                $error = "User Already Exists!";
+                require "login_form.php";
+                exit;
+            }
+            
+            
+            $password = $conn-> real_escape_string($password);
             $password = sha1($password);
             
             $query = "insert into users (firstName, lastName, username, password, email, birthday, addDate, changeDate) values ('$firstName', '$lastName', '$username', '$password', '$email', STR_TO_DATE('$birthday', '%Y-%m-%d'), now(), now())";
