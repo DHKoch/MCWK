@@ -25,12 +25,12 @@ create table posts (
     	addDate datetime not null  
 );  
 
-create table likes (
-	likeID int not null auto_increment primary key,
-	postID int not null,
-    likeUserID int not null,
-    liked bool default false,
-    disliked bool default false
+create table likes (  
+	likeID int not null auto_increment primary key,  
+	postID int not null,  
+    likeUserID int not null,  
+    liked bool default false,  
+    disliked bool default false  
 );  
 
 CREATE TABLE users (  
